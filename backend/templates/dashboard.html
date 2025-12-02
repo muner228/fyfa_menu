@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لوحة التحكم - المنيو الإلكتروني</title>
+    <title>لوحة التحكم - كتلوج منتجات عطارة فيفا</title>
 
     <style>
         body {
@@ -185,7 +185,7 @@
 <body>
 
 <header>
-    <h1>لوحة التحكم - المنيو الإلكتروني</h1>
+    <h1>لوحة التحكم - كتلوج المنتجات</h1>
     <a href="/logout">تسجيل خروج</a>
 </header>
 
@@ -235,9 +235,9 @@
         {% if role == "admin" %}
         <label>القسم:</label>
         <select name="category" required>
-            <option value="factory">🏭 منتجات المصنع</option>
-            <option value="warehouse">🏬 منتجات المستودع</option>
-            <option value="purchases">🧾 منتجات المشتريات</option>
+            <option value="factory">🏭 منتجات منصع فيفا</option>
+            <option value="warehouse">🏬 منتجات مستودع النخيل</option>
+            <option value="purchases">🧾 منتجات مكتب المشتريات</option>
         </select>
         {% endif %}
 
@@ -346,3 +346,4 @@ resetBtn.addEventListener("click", () => {
 
 </body>
 </html>
+
