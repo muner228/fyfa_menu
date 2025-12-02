@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المنيو الإلكتروني - عطارة فيفا</title>
+    <title>كتلوج منتجات - عطارة فيفا</title>
 
     <style>
         body {
@@ -214,7 +214,7 @@
 <body>
 
 <header>
-    المنيو الإلكتروني - عطارة فيفا
+    كتلوج منتجات - عطارة فيفا
     <div class="share-bar">
         <button id="copyBtn" class="share-btn">📋 نسخ الرابط</button>
         <button id="whatsappBtn" class="share-btn">💬 مشاركة واتساب</button>
@@ -230,9 +230,9 @@
 
 <!-- 🏭 أيقونات الأقسام -->
 <div class="categories">
-    <button class="cat-btn {% if category == 'factory' %}active{% endif %}" onclick="window.location='?category=factory'">🏭 منتجات المصنع</button>
-    <button class="cat-btn {% if category == 'warehouse' %}active{% endif %}" onclick="window.location='?category=warehouse'">🏬 منتجات المستودع</button>
-    <button class="cat-btn {% if category == 'purchases' %}active{% endif %}" onclick="window.location='?category=purchases'">🧾 منتجات المشتريات</button>
+    <button class="cat-btn {% if category == 'factory' %}active{% endif %}" onclick="window.location='?category=factory'">🏭 كتلوج منتجات المصنع</button>
+    <button class="cat-btn {% if category == 'warehouse' %}active{% endif %}" onclick="window.location='?category=warehouse'">🏬 كتلوج منتجات المستودع</button>
+    <button class="cat-btn {% if category == 'purchases' %}active{% endif %}" onclick="window.location='?category=purchases'">🧾 مكتلوج منتجات مكتب المشتريات</button>
 </div>
 
 <!-- 🔘 شريط الفلاتر -->
@@ -277,12 +277,12 @@
     const currentUrl = window.location.href;
     document.getElementById("copyBtn").addEventListener("click", () => {
         navigator.clipboard.writeText(currentUrl);
-        alert("✅ تم نسخ رابط المنيو بنجاح!");
+        alert("✅ تم نسخ رابط الكتلوج بنجاح!");
     });
 
     // زر مشاركة واتساب
     document.getElementById("whatsappBtn").addEventListener("click", () => {
-        const text = encodeURIComponent("📜 تصفح منيو عطارة فيفا:\n" + currentUrl);
+        const text = encodeURIComponent("📜 تصفح كتلوج منتجات عطارة فيفا:\n" + currentUrl);
         window.open(`https://wa.me/?text=${text}`, "_blank");
     });
 
@@ -334,3 +334,4 @@
 
 </body>
 </html>
+
